@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="./test.css">
+</head>
+<body>
+    <div class="shadow-div">
+        <div class="hour">
+            <div class="hr" id="hr"></div>
+        </div>
+        <div class="min">
+            <div class="mn" id="mn"></div>
+        </div>
+        <div class="sec">
+            <div class="sc" id="sc"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        let hr = document.querySelector('#hr');
+        let mn = document.querySelector('#mn');
+        let sc = document.querySelector('#sc');
+
+        var today = new Date();
+        var hours = today.getHours() > 12 ? today.getHours() - 12 : today.getHours();
+        var mins =  today.getMinutes() * 6;
+        var secs =  today.getSeconds();
+
+        console.log(( hours) + " "+ hours  + mins/12+ " "+ secs);
+
+        // hr.style.transform = `webkit-transform(${(hours)+(mins/12)}deg)`
+//  transform: rotateZ(90deg);
+
+        console.log(hr)
+    </script>
+</body>
+</html>

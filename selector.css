@@ -1,0 +1,52 @@
+
+body {
+    /* display: flex; */
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 1em;
+    /* flex-direction: row;  */
+    /* flex-flow: row  wrap; */
+    /*  starting  main axis from left to right */
+    /* cross axis from top to bottom  */
+    /* justify content will align according to main axis in this case */
+    /* align item will aligin according to cross axis*/
+
+    /* flex-direction: column; 
+        In this case, cross-axis becomes left to right
+        main axis becomes top to bottom
+        cross axis becomes left to right
+        justify content works on main axis
+        align items works on cross axis
+    ;*/
+}
+.example {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px; 
+}
+.one { 
+    
+    flex: 0 0 100px; 
+    height: 50px;
+    margin: 0  10px;
+    /* flex-grow flex-shrink flex-basis    
+    /* flex-grow shows how much positive free space this item will get ?*/
+    /* flex-shrink shows how much negative free space can be removed from this item?*/
+    /* flex-basis tells What is the size of the item before growing and shrinking happens? */
+    background-color: chartreuse;
+}
+
+.two { 
+    flex: 0 0 100px; 
+    height: 50px;
+    background-color: brown;
+    margin: 0  10px;
+}
+/* .example + .example {
+    background-color: brown;
+} */

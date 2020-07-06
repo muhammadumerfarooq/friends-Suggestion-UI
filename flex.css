@@ -1,0 +1,55 @@
+
+.parent {
+    display: flex;
+    margin-top: 80px;
+    background-color: #535353;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+
+.div1 {
+    width: 70px;
+    margin: 5px;
+    background-color: orange;
+}
+
+.div2 {
+    width: 140px;
+    margin: 15px;
+
+    background-color: #554261;
+}
+
+.div3 {
+    width: 210px;
+    margin: 15px;
+
+    background-color: #6544f8;
+
+}
+
+.div4 {
+    width: 250px;
+    margin: 15px;
+
+    background-color: #f8aa44;
+
+}
+
+.div5 {
+    width: 280px;
+    margin: 15px;
+
+    background-color: #f84471;
+
+}
+
+
+.div6 {
+    width: 310px;
+    margin: 15px;
+
+    background-color: #44f853;
+
+}
